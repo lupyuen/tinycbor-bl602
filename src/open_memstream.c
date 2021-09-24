@@ -112,6 +112,14 @@ FILE *open_memstream(char **bufptr, size_t *lenptr)
         close_buffer
     };
     return fopencookie(b, "w", vtable);
+#elif ARCH_RISCV
+    static const cookie_io_functions_t vtable = {
+        NULL,
+        write_to_buffer,
+        NULL,
+        close_buffer
+    };
+    return fopencookie(b, "w", vtable);
 #endif
 }
 
