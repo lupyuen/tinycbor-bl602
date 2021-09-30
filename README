@@ -1,6 +1,8 @@
 Concise Binary Object Representation (CBOR) Library for BL602 and BL604
 -----------------------------------------------------------------------
 
+Read the article "Encode Sensor Data with CBOR on BL602": https://lupyuen.github.io/articles/cbor
+
 This library should be added to "bl_iot_sdk" at "components/3rdparty/tinycbor-bl602"
 
 See demo firmware: https://github.com/lupyuen/bl_iot_sdk/blob/cbor/customer_app/pinedio_cbor/pinedio_cbor/demo.c
